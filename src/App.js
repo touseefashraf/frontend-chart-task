@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {Line } from 'react-chartjs-2';
+import { Data } from "./data";
 import {
   Chart as ChartJS,
   LineElement,
@@ -23,13 +24,13 @@ ChartJS.register(
 function App() {
 
   const data = {
-      labels:['Mon' , 'Tue' , 'Wed'],
+      labels:['12-Nov' , '13-Nov' , '14-Nov', '15-Nov', '16-Nov','17-Nov','18-Nov'],
       datasets: [{
-          label : 'Sales of week',
-          data : [6,3,9],
+          label : 'Tempreature Data',
+          data : Data,
           backgroundColor : 'aqua',
           borderColor : 'black',
-          pointBorderColor : 'aqua',
+          pointBorderColor : 'Black',
           fill : true,
           tension:0.4
 
